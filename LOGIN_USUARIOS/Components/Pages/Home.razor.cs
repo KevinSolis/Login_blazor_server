@@ -79,7 +79,7 @@ namespace LOGIN_USUARIOS.Components.Pages
         {
             if (string.IsNullOrEmpty(nuevoUsuario.USRS_NOMBRE) && string.IsNullOrEmpty(nuevoUsuario.USRS_CORREO) && string.IsNullOrEmpty(nuevoUsuario.USRS_CLAVE))
             {
-                mensaje = "Por favor, completa todos los campos.";
+                mensaje = "Estimado usuario, por favor completar todos los campos.";
                 return;
             }
 
