@@ -1,0 +1,50 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+
+<div class="container-sm">
+
+<h3>@(mostrarFormularioCreacion ? "Crear Usuario" : "Iniciar Sesión")</h3>
+
+@if (!string.IsNullOrEmpty(mensaje))
+{
+    <div class="alert alert-info">@mensaje</div>
+}
+
+@if (mostrarFormularioCreacion)
+{
+    
+    <EditForm Model="nuevoUsuario" OnSubmit="CrearUsuario">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <InputText id="nombre" class="form-control" @bind-Value="nuevoUsuario.USRS_NOMBRE" />
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo Electrónico</label>
+            <InputText id="correo" class="form-control" @bind-Value="nuevoUsuario.USRS_CORREO" />
+        </div>
+        <div class="form-group">
+            <label for="clave">Clave</label>
+            <InputText id="clave" type="password" class="form-control" @bind-Value="nuevoUsuario.USRS_CLAVE" />
+        </div>
+        <button type="submit" class="btn btn-primary">Crear Usuario</button>
+        <button type="button" class="btn btn-link" @onclick="MostrarFormularioLogin">Cancelar</button>
+    </EditForm>
+}
+else
+{
+    <EditForm Model="usuarioLogin" OnSubmit="LoginUsuario">
+        <div class="form-group">
+            <label for="usuario">Usuario</label>
+            <InputText id="usuario" class="form-control" @bind-Value="usuarioLogin.USRS_CORREO" />
+        </div>
+        <div class="form-group">
+            <label for="clave">Clave</label>
+            <InputText id="clave" type="password" class="form-control" @bind-Value="usuarioLogin.USRS_CLAVE" />
+        </div>
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        <button type="button" class="btn btn-link" @onclick="MostrarFormularioCreacion">Crear Usuario</button>
+    </EditForm>
+}
+
+</div>

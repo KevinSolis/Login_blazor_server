@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_API", "REST_API\REST_API.csproj", "{CB98CB7B-2BB3-47A4-BBE1-845139D98204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LOGIN_USUARIOS", "LOGIN_USUARIOS\LOGIN_USUARIOS.csproj", "{AC57A5FA-350A-41FB-8305-6EA5A5D2606F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB98CB7B-2BB3-47A4-BBE1-845139D98204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB98CB7B-2BB3-47A4-BBE1-845139D98204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB98CB7B-2BB3-47A4-BBE1-845139D98204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB98CB7B-2BB3-47A4-BBE1-845139D98204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC57A5FA-350A-41FB-8305-6EA5A5D2606F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC57A5FA-350A-41FB-8305-6EA5A5D2606F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC57A5FA-350A-41FB-8305-6EA5A5D2606F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC57A5FA-350A-41FB-8305-6EA5A5D2606F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96127B38-3EBB-4A75-85C7-A23347A969F5}
+	EndGlobalSection
+EndGlobal
